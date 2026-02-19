@@ -1,5 +1,9 @@
 # FinSight — Finance Domain Assistant via LLM Fine-Tuning
 
+**[🚀 Live Demo on Hugging Face Spaces](https://huggingface.co/spaces/twizelissa/twizelissa)**
+
+![FinSight Interface](Screenshot%202026-04-25%20062040.png)
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
@@ -10,6 +14,7 @@
 - [Example Conversations](#example-conversations)
 - [How to Run](#how-to-run)
 - [UI — Gradio Chat Interface](#ui--gradio-chat-interface)
+- [Live Demo (Hugging Face Space)](#live-demo-hugging-face-space)
 - [Repository Structure](#repository-structure)
 
 ---
@@ -195,18 +200,21 @@ The most significant improvement is **perplexity**, which dropped **67.3%** (9.6
 
 ## How to Run
 
-### Requirements
+### Standalone App
 
-- Google Colab account (free tier works)
-- T4 GPU runtime — **Runtime → Change runtime type → GPU**
-- No local installation needed — all dependencies are installed in Cell 1
+You can also run the assistant as a standalone Python script:
 
-### Steps
+1. Ensure you have the dependencies installed:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Run the application:
+   ```bash
+   python app.py
+   ```
+3. Open the local URL provided in your browser.
 
-1. Click the **Open in Colab** badge at the top of this README.
-2. Set the runtime to T4 GPU: **Runtime → Change runtime type → T4 GPU**.
-3. Run **Runtime → Run all**.
-4. The complete pipeline (install → data → train → evaluate → Gradio UI) finishes in approximately **37–40 minutes**.
+The `app.py` script includes compatibility patches for Python 3.13 and recent `huggingface_hub` versions.
 
 ### (Optional) Push to Hugging Face Hub
 
@@ -228,6 +236,14 @@ Section 8 launches an interactive **Gradio Blocks** chat interface inside Colab.
 - Adjustable generation parameters (max tokens, temperature, top-p)
 - Gradient-styled header
 - Clean, accessible layout
+
+---
+
+## Live Demo (Hugging Face Space)
+
+You can try out the **FinSight** assistant directly in your browser:
+
+**[🚀 FinSight on Hugging Face Spaces](https://huggingface.co/spaces/twizelissa/twizelissa)**
 
 ---
 
