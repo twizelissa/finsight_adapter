@@ -1,6 +1,6 @@
 # FinSight — Finance Domain Assistant via LLM Fine-Tuning
 
-**[🚀 Live Demo on Hugging Face Spaces](https://huggingface.co/spaces/twizelissa/twizelissa)**
+**[🚀 Live Demo on Hugging Face Spaces](https://huggingface.co/spaces/twizelissa/twizelissa)** | **[🎥 Demo Video Presentation](https://drive.google.com/file/d/10RqGZbTcor8RXFCRSV0XB6MK87sPg1V8/view)**
 
 ![FinSight Interface](Screenshot%202026-04-25%20062040.png)
 
